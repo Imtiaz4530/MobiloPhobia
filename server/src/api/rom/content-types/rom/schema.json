@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "roms",
+  "info": {
+    "singularName": "rom",
+    "pluralName": "roms",
+    "displayName": "ROM"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "rom": {
+      "type": "enumeration",
+      "enum": [
+        "r-32GB",
+        "r-64GB",
+        "r-128GB",
+        "r-256GB",
+        "r-512GB",
+        "r-1TB"
+      ]
+    }
+  }
+}

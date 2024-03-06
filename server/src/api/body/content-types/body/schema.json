@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bodies",
+  "info": {
+    "singularName": "body",
+    "pluralName": "bodies",
+    "displayName": "Body"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "style": {
+      "type": "string"
+    },
+    "material": {
+      "type": "string"
+    },
+    "weight": {
+      "type": "string"
+    },
+    "waterResistance": {
+      "type": "string"
+    },
+    "dimensions": {
+      "type": "string"
+    }
+  }
+}

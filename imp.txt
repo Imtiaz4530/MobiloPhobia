@@ -1,0 +1,97 @@
+    // strapi-api/config/database.js
+    module.exports = ({ env }) => ({
+      connection: {
+        client: 'postgres',
+        connection: {
+          host: env('DATABASE_HOST'),
+          port: env.int('DATABASE_PORT'),
+          database: env('DATABASE_NAME'),
+          user: env('DATABASE_USERNAME'),
+          password: env('DATABASE_PASSWORD'),
+          ssl: env.bool('DATABASE_SSL', true)
+        },
+        debug: false,
+      },
+    });
+
+
+    // ssl: false
+
+
+
+
+yarn develop
+
+
+
+// env
+HOST=0.0.0.0
+PORT=1337
+APP_KEYS=9ReF8ocQm3p2pfBxARnZgA==,O1XBwKEDakto12ehkWyexQ==,UGw4iCqNq6HN9/1/l8c5FQ==,Ac6HmjadhBvwwqKg6lFJBw==
+API_TOKEN_SALT=eHCY22kA2x0obHZkgTl9zw==
+ADMIN_JWT_SECRET=RI4kM8g/bBGFwBroLJcINA==
+TRANSFER_TOKEN_SALT=g6V85f1FliZReO1oVwo75g==
+
+# Database
+DATABASE_CLIENT=postgres
+DATABASE_HOST=dpg-cgs1co2ut4m7db49v9v0-a.singapore-postgres.render.com
+DATABASE_PORT=5432
+DATABASE_NAME=mobilophobia
+DATABASE_USERNAME=mobilophobia_user
+DATABASE_PASSWORD=s2yVBNn9Gi3GUO8jYXjGHgeU5On5BOJv
+DATABASE_FILENAME=.tmp/data.db
+JWT_SECRET=EtDg6u2Dz6ReKOyUJmcUcg==
+
+
+CLOUDINARY_NAME = dye9kdude
+CLOUDINARY_KEY = 516429234993274
+CLOUDINARY_SECRET = ADfVCI_4hlX9oGBMtiXBVvI5HtI
+
+
+
+
+
+
+
+
+
+
+
+// before 
+    // strapi-api/config/database.js
+    module.exports = ({ env }) => ({
+      connection: {
+        client: 'postgres',
+        connection: {
+          host: env('DATABASE_HOST', 'localhost'),
+          port: env.int('DATABASE_PORT', 5432),
+          database: env('DATABASE_NAME', 'postgres'),
+          user: env('DATABASE_USERNAME', 'postgres'),
+          password: env('DATABASE_PASSWORD', 'Imtiaz.0'),
+          schema: env('DATABASE_SCHEMA', 'public'), // Not required
+          ssl: false
+        },
+        debug: false,
+      },
+    });
+
+
+
+
+HOST=0.0.0.0
+PORT=1337
+APP_KEYS=9ReF8ocQm3p2pfBxARnZgA==,O1XBwKEDakto12ehkWyexQ==,UGw4iCqNq6HN9/1/l8c5FQ==,Ac6HmjadhBvwwqKg6lFJBw==
+API_TOKEN_SALT=eHCY22kA2x0obHZkgTl9zw==
+ADMIN_JWT_SECRET=RI4kM8g/bBGFwBroLJcINA==
+TRANSFER_TOKEN_SALT=g6V85f1FliZReO1oVwo75g==
+
+# Database
+DATABASE_CLIENT=postgres
+DATABASE_HOST=dpg-cgs1co2ut4m7db49v9v0-a.singapore-postgres.render.com
+# DATABASE_PORT=5432
+# DATABASE_NAME=mobilophobia
+# DATABASE_PASSWORD=Imtiaz.0
+DATABASE_FILENAME=.tmp/data.db
+JWT_SECRET=EtDg6u2Dz6ReKOyUJmcUcg==
+
+

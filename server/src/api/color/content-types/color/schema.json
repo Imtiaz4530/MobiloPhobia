@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "colors",
+  "info": {
+    "singularName": "color",
+    "pluralName": "colors",
+    "displayName": "Color",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "color": {
+      "type": "enumeration",
+      "enum": [
+        "Space Black",
+        "Gold",
+        "Silver",
+        "Deep Purple",
+        "Titan Black",
+        "Eternal Green",
+        "Phantom Black",
+        "Green",
+        "Cream",
+        "Lavender",
+        "Graphite",
+        "Sky Blue",
+        "Lime",
+        "Red"
+      ]
+    }
+  }
+}

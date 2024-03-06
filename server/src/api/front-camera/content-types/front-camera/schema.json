@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "front_cameras",
+  "info": {
+    "singularName": "front-camera",
+    "pluralName": "front-cameras",
+    "displayName": "Front Camera"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "videoRecording": {
+      "type": "string"
+    },
+    "resolution": {
+      "type": "string"
+    },
+    "features": {
+      "type": "string"
+    }
+  }
+}

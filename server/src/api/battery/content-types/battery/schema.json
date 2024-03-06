@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "batteries",
+  "info": {
+    "singularName": "battery",
+    "pluralName": "batteries",
+    "displayName": "Battery",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "typeAndCapacity": {
+      "type": "string"
+    },
+    "fastCharging": {
+      "type": "string"
+    },
+    "wirelessCharging": {
+      "type": "string"
+    }
+  }
+}

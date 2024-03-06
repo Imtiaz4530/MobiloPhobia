@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "performances",
+  "info": {
+    "singularName": "performance",
+    "pluralName": "performances",
+    "displayName": "Performance",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "OS": {
+      "type": "string"
+    },
+    "chipset": {
+      "type": "string"
+    },
+    "processor": {
+      "type": "string"
+    },
+    "gpu": {
+      "type": "string"
+    },
+    "rams": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::ram.ram"
+    }
+  }
+}

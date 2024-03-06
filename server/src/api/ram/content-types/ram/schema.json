@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "rams",
+  "info": {
+    "singularName": "ram",
+    "pluralName": "rams",
+    "displayName": "RAM",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "ram": {
+      "type": "enumeration",
+      "enum": [
+        "r-1GB",
+        "r-2GB",
+        "r-3GB",
+        "r-4GB",
+        "r-6GB",
+        "r-8GB",
+        "r-12GB",
+        "r-16GB"
+      ]
+    }
+  }
+}

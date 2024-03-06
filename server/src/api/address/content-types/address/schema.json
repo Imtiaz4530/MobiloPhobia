@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "addresses",
+  "info": {
+    "singularName": "address",
+    "pluralName": "addresses",
+    "displayName": "Address",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "division": {
+      "type": "string",
+      "required": true
+    },
+    "district": {
+      "type": "string",
+      "required": true
+    },
+    "subDistrict": {
+      "type": "string",
+      "required": false
+    },
+    "house": {
+      "type": "string",
+      "required": false
+    },
+    "area": {
+      "type": "text",
+      "required": true
+    },
+    "streetNO": {
+      "type": "string",
+      "required": false
+    },
+    "userId": {
+      "type": "biginteger",
+      "required": true
+    }
+  }
+}

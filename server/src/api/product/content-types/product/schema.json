@@ -1,0 +1,123 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "singularName": "product",
+    "pluralName": "products",
+    "displayName": "product",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "price": {
+      "type": "integer",
+      "default": 0,
+      "required": true
+    },
+    "productImage": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "stock": {
+      "type": "integer",
+      "default": 0,
+      "required": true
+    },
+    "upcoming": {
+      "type": "boolean",
+      "default": false
+    },
+    "connectivity": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::connectivity.connectivity"
+    },
+    "back_camera": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::back-camera.back-camera"
+    },
+    "battery": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::battery.battery"
+    },
+    "body": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::body.body"
+    },
+    "brand": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::brand.brand",
+      "inversedBy": "products"
+    },
+    "colors": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::color.color"
+    },
+    "display": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::display.display"
+    },
+    "front_camera": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::front-camera.front-camera"
+    },
+    "other": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::other.other"
+    },
+    "performance": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::performance.performance"
+    },
+    "security": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::security.security"
+    },
+    "sound": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::sound.sound"
+    },
+    "storage": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::storage.storage"
+    },
+    "launchAnnouncement": {
+      "type": "string"
+    },
+    "launchDate": {
+      "type": "string"
+    },
+    "ratings": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::rating.rating"
+    },
+    "discount": {
+      "type": "decimal",
+      "default": 0
+    }
+  }
+}

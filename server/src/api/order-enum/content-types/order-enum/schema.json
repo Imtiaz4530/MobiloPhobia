@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "order_enums",
+  "info": {
+    "singularName": "order-enum",
+    "pluralName": "order-enums",
+    "displayName": "orderENUM"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "orderStatus": {
+      "type": "enumeration",
+      "enum": [
+        "pending",
+        "success",
+        "reject"
+      ]
+    }
+  }
+}

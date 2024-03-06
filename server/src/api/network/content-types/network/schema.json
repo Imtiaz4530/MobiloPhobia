@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "networks",
+  "info": {
+    "singularName": "network",
+    "pluralName": "networks",
+    "displayName": "Network"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "network": {
+      "type": "enumeration",
+      "enum": [
+        "N-2G",
+        "N-3G",
+        "N-4G",
+        "N-5G"
+      ],
+      "required": true
+    }
+  }
+}

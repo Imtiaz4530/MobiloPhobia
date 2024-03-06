@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "securities",
+  "info": {
+    "singularName": "security",
+    "pluralName": "securities",
+    "displayName": "Security"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "fingerPrint": {
+      "type": "string"
+    },
+    "faceLock": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}
